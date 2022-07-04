@@ -33,3 +33,34 @@
 .titleNavbar{
   margin-left: 8rem;
 }
+.bodypop{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.bodypop label{
+  text-align: left;
+  display: block;
+}
+.bodypop h2 {
+  margin-bottom: 30px;
+}
+.bodypop input, .bodypop textarea, .bodypop select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  bottom: 1px solid;
+}
+.bodypop button{
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border: 0;
+  background-color: cadetblue;
+  color: antiquewhite;
+}
+.newBlog{
+  margin-left: 21rem;
+}
