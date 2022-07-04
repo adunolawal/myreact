@@ -1,14 +1,16 @@
-const Navbar =() => {
+const Navbar =(props) => {
     return (
         <div className="navbar">
             <h1>The Dojo Blog</h1>
             <div className="titleNavbar">
                 <a href='www.google.com'>Home</a>
-                <a href='www.google.com' style={{
+                <button onClick={props.showpop} 
+                style={{
                 color: 'white',
                 backgroundColor: 'cadetblue',
                 borderRadius:'5px',
-                }}>New Blog</a>
+                border: "none"
+                }}>New Blog</button>
             </div>
         </div>
     );

@@ -1,0 +1,22 @@
+{
+    "blogs":[
+    {
+        " title": "My new website", 
+        " body":"Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak ",
+        "author": "Mario",
+        "id":1
+    },
+    {
+        "title" : "Welcome party!", 
+        " body":"Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak ",
+        "author": "Luigi",
+        "id":2
+    },
+    {
+        " title": "Web development top skills", 
+        " body":"Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak ",
+        "author": "Yoshi",
+        "id":3
+    }
+  ]
+}

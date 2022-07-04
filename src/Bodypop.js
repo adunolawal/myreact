@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Bodypop = (props) => {
+const Bodypop = ({onAdd}) => {
 
    const [title, setTitle] = useState("")
    const [body, setBody] = useState("")
@@ -8,8 +8,10 @@ const Bodypop = (props) => {
 
    const handleSubmit =(e)=> {
       e.preventDefault()
-      const blog = {title, body, author}
+      
+      onAdd( {title, body, author} )
    }
+
 
     return ( 
        <div>
@@ -37,7 +39,7 @@ const Bodypop = (props) => {
             <option value="Written by yoshi">Yoshi</option>
             <option value="Written by ninja">Ninja</option>
             </select>
-            <button>Add Blog</button>
+            <button onSubmit={handleSubmit}>Add Blog</button>
            </form>
         </div> 
         <div className="newBlog">

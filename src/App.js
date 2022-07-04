@@ -26,24 +26,29 @@ class App extends Component {
     const doeshow = this.state.poppingBody
    this.setState({poppingBody:!doeshow})
   }
-  updateBody = (event) =>{
-    const updating = this.state.blogs.findIndex(p =>{return p.body })
-    const eachBody = [...this.state.blogs]
+  handleDelete = (id, blogs) =>{
+   const newBlog = blogs.filter (blog => blog.id !== id)
+   this.setState(newBlog)
+  }
+
+  addTask = (blogs)=> {
+    const id = Math.floor(Math.random()* 1000) + 1
+    const newBlogs = {id, ...blogs}
+    this.setState([...blogs, ])
   }
 
   render(){
-    // let people = null
-    // if(this.state.poppingBody){
-    //   people = <div>
-    //     {this.state.blogs.map(showingBody => {return <Bodypop body={showingBody.body}></Bodypop> }) }
-    //   </div>
-    // }
+    let people = null
+    if(this.state.poppingBody){
+      people = 
+        <Bodypop onAdd={this.addTask}></Bodypop> 
+    }
 
 
     return (
       <div className='App'>
-        <Navbar/>
-        <Bodypop></Bodypop>
+        <Navbar showpop={this.popBody}/>
+        <p>{people} </p>
         <div className='content'>
           {this.state.blogs.map(mapTask =>
              { return  <Home title={mapTask.title} 
